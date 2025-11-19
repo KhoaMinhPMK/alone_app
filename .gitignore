@@ -1,2 +1,50 @@
 # BMAD (local only)
-node_modules
+# --- Global ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db
+
+# Environment Variables (Keep .env.example)
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# --- IDEs ---
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# --- Build Outputs ---
+dist/
+build/
+coverage/
+
+# --- NestJS (Backend) ---
+apps/backend-api/iisnode/
+*.tsbuildinfo
+
+# --- React Native (Mobile) ---
+# Android
+**/android/build/
+**/android/.gradle/
+**/android/local.properties
+**/android/*.iml
+**/android/app/build/
+
+# iOS
+**/ios/Pods/
+**/ios/build/
+**/ios/*.xcworkspace
+**/ios/*.xcuserdatad
+**/ios/DerivedData/
+
+# Metro
+.metro-health-check*
+
+# --- Monorepo / Tools ---
+.turbo/
